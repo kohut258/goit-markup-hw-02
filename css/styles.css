@@ -210,5 +210,7 @@ text-align: center;
 letter-spacing: 0.04em;
 color: #4D5AE5;
 background: #F4F4FD;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
 
 }
