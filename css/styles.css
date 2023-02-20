@@ -1,6 +1,14 @@
 :root{
     --maim-text-color: #434455;
     --maim-title-color: #2E2F42;
+    --maim-logo-color: #4D5AE5;
+    --maim-logo-text-color: #F4F4FD;
+    --maim-logo-futer-color: #2E2F42;
+    --maim-text-futer-color:#E7E9FC;
+    --maim-btn-active-color: #404BBF;
+    --maim-big-title-color: #FFFFFF;
+    --maim-background-fon-color:#F4F4FD;
+   
 
 }
 
@@ -27,7 +35,9 @@ list-style: none;
 body{
     font-family: 'Roboto', sans-serif;
     color:  #434455;
+    background:#FFFFFF;
 
+;
 }  
 .text{  
     font-size: 16px;
@@ -40,6 +50,7 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    
 }
 /* колір логотипа web =color: #4D5AE5; */
 /* колір жирного тексту color: #2E2F42; */
@@ -48,16 +59,18 @@ body{
 /* -----------header----------- */
 .logo{   
 font-family: 'Raleway';
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
-color: #2E2F42;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--maim-title-color);
 }
 .logo-web{
-    color: #4D5AE5;
+    color: var(--maim-logo-color);
 
 }
+
 .header-link{
     font-weight: 500;
     font-size: 16px;
@@ -69,13 +82,14 @@ color: #2E2F42;
 .header-link:active,
 .header-link:focus,
 .header-link:hover{
-    color: #404BBF;
+    color: var(--maim-btn-active-color);
 
 }
 .contakt-link{
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;    
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 color: var(--maim-text-color);
 
 }
@@ -83,13 +97,32 @@ color: var(--maim-text-color);
 .contakt-link-mailto:hover,
 .contakt-link-mailto:focus
 {
-    color: #404BBF;
+color: var(--maim-btn-active-color);
+}
+/* -----------footer----------- */
+.footer{
+    background:var(--maim-logo-futer-color);
+}
+
+.logo-footer{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+color: var(--maim-logo-text-color);
+    
+}
+
+.footer-text{   
+color: var(--maim-text-futer-color);
 
 }
 /* -----------main----------- */
 /* -----------hero----------- */
 .section-hero{
-background: #2E2F42;
+    background: var(--maim-title-color) ;
 
 }
 .hero-title{
@@ -97,36 +130,34 @@ background: #2E2F42;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    text-transform: lowercase;
+    color: var(--maim-big-title-color);
+
 }
 
 .btn-hero{
     cursor: pointer;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;    
-    color: #FFFFFF;
-    
-background: #4D5AE5;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-
+    letter-spacing: 0.04em;    
+    color: var(--maim-big-title-color);
+    background:var(--maim-logo-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
 }
+.btn-hero:focus,
 .btn-hero:hover{
-    background: #404BBF;
-
+    background:var(--maim-btn-active-color);
 }
 
 /* -----------benefits----------- */
 .benefits-title {
+    text-transform: uppercase;
     color: var(--maim-title-color);
 }
 .benefits-text {
-
     text-transform: lowercase;
     color: var(--maim-text-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -134,17 +165,16 @@ border-radius: 4px;
 }
 /* -----------main work----------- */
 .slider-work-title{
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    /* identical to box height, or 111% */
-    text-align: center;
     letter-spacing: 0.02em;
+    color: var(--maim-title-color);  
 }
 /* -----------main team----------- */
 .team {
-    background: #F4F4FD;
+    background:var(--maim-background-fon-color);
+
 }
 .team-title {
 
@@ -164,45 +194,23 @@ border-radius: 4px;
 .team-text {
     color: var(--maim-text-color);
 }
-/* -----------footer----------- */
-.footer{
-    background: #2E2F42;
-
-}
-
-.logo-footer{
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-color: #F4F4FD;
-
-}
-
-.footer-text{   
-color: #E7E9FC;
-    
-}
 /* -----------PORTFOLIO----------- */
 /* -----------menu button----------- */
 .btn{
     cursor: pointer;
+    font-family: 'Roboto';
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.04em;
-color: #4D5AE5;
-background: #F4F4FD;
+color: var(--maim-logo-color);
+background: var(--maim-background-fon-color);
 
 }
 .btn:hover,
 .btn:focus{
-    background: #404BBF;
-    color: #FFFFFF;
+    background: var(--maim-btn-active-color);
+    color: var(--maim-big-title-color);
 
 }
 /* -----------features----------- */
