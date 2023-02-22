@@ -86,10 +86,10 @@ color: var(--maim-title-color);
 
 }
 .contakt-link{
+    font-style: normal;
     font-size: 16px;
-    line-height: 1.5;    
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
 color: var(--maim-text-color);
 
 }
@@ -130,7 +130,6 @@ color: var(--maim-text-futer-color);
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-transform: lowercase;
     color: var(--maim-big-title-color);
 
 }
@@ -144,8 +143,6 @@ color: var(--maim-text-futer-color);
     letter-spacing: 0.04em;    
     color: var(--maim-big-title-color);
     background:var(--maim-logo-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border-radius: 4px;
 }
 .btn-hero:focus,
 .btn-hero:hover{
@@ -154,13 +151,13 @@ color: var(--maim-text-futer-color);
 
 /* -----------benefits----------- */
 .benefits-title {
-    text-transform: uppercase;
+
     color: var(--maim-title-color);
 }
 .benefits-text {
     text-transform: lowercase;
     color: var(--maim-text-color);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 
 }
 /* -----------main work----------- */
@@ -182,7 +179,7 @@ color: var(--maim-text-futer-color);
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;    
+    
     color: var(--maim-title-color);
     
 }
